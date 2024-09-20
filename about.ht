@@ -1,0 +1,154 @@
+Introduction
+Who You Are: Start with a brief introduction about yourself. Mention your name, where you’re from, and your journey into web development.
+Passion for Tech: Share what sparked your interest in technology and web development. Was it a particular project, a class, or someone who inspired you?
+Journey into Web Development
+Learning Path: Describe how you started learning web development. Did you take online courses, attend a bootcamp, or self-study? Highlight any specific skills or languages you learned (HTML, CSS, JavaScript, etc.).
+Challenges Overcome: Talk about any challenges you faced as a beginner, especially as a female in a male-dominated field. Discuss how you overcame these obstacles and what you learned from them.
+Projects and Experience
+Portfolio Projects: Showcase a few key projects that demonstrate your skills. Include:
+Project Titles: Give each project a name.
+Descriptions: Briefly describe the purpose of each project, the technologies used, and your role in it.
+Links: Provide links to live demos or GitHub repositories.
+Collaboration and Teamwork: Highlight any collaborative projects or experiences, emphasizing how you worked with others to achieve a common goal.
+Values and Goals
+Diversity in Tech: Express your views on diversity in the tech industry and why it’s important to you. Perhaps share how you hope to inspire other women to enter the field.
+Future Aspirations: Discuss your career goals. What areas of web development are you most excited about? Are there specific technologies or roles you want to pursue?
+Conclusion
+Call to Action: Encourage visitors to connect with you. Provide links to your LinkedIn, GitHub, or any other platforms where they can reach you.
+Thank You: End with a note of gratitude for taking the time to view your portfolio.
+Additional Tips
+Visual Elements: Use images or graphics to complement your story. This could include screenshots of your projects, photos of you coding, or design elements that reflect your personal style.
+User-Friendly Design: Ensure your portfolio is easy to navigate and mobile-responsive.
+Personal Touch: Consider adding a personal blog or section where you share insights on your learning journey, challenges, or industry trends.
+
+
+
+
+
+
+<main class="experience">
+    <div class="skills-container">
+      <div class="skill-card">
+        <h3>CSS</h3>
+        <div class="circle-progress" data-percentage="90">
+          <span class="percentage">90%</span>
+        </div>
+        <div class="progress-info">
+          <div>
+            <span>28%</span>
+            <p>Last week</p>
+          </div>
+          <div>
+            <span>60%</span>
+            <p>Last month</p>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>HTML</h3>
+        <div class="circle-progress" data-percentage="80">
+          <span class="percentage">80%</span>
+        </div>
+        <div class="progress-info">
+          <div>
+            <span>28%</span>
+            <p>Last week</p>
+          </div>
+          <div>
+            <span>60%</span>
+            <p>Last month</p>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>jQuery</h3>
+        <div class="circle-progress" data-percentage="75">
+          <span class="percentage">75%</span>
+        </div>
+        <div class="progress-info">
+          <div>
+            <span>28%</span>
+            <p>Last week</p>
+          </div>
+          <div>
+            <span>60%</span>
+            <p>Last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+.skills-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.skill-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.circle-progress {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #4169e1 var(--percentage),
+    #f0f0f0 var(--percentage)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.percentage {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.progress-info div {
+  text-align: center;
+}
+
+.progress-info span {
+  font-weight: bold;
+}
+
+.progress-info p {
+  color: #888;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+
+
+#################################
+
+img {
+  --r: 50px; /* the radius */
+  
+  width: 250px; /* the image size */
+  aspect-ratio: 1;
+  margin: calc(tan(22.5deg)*var(--r));
+  clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%) margin-box;
+  --_g:/calc(2*var(--r)) calc(2*var(--r)) 
+    radial-gradient(#000 70%,#0000 72%);
+  --_s:calc(100% - (1 - tan(22.5deg))*var(--r));
+  mask:
+    conic-gradient(#000 0 0) no-repeat 50%/var(--_s) var(--_s),
+    top var(--_g) no-repeat space,left var(--_g) space no-repeat;
+}
