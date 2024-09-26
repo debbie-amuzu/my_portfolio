@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,12 +9,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
   <!-- https://themewagon.github.io/rezume/     https://themewagon.github.io/dominic/ -->
   <nav class="nav-bar">
-    <div id="google_translate_element"></div>
     <div class="brand">D.Amuzu</div>
-    <div id="google_translate_element"></div>
+    <div id="translator"></div>
     <div class="nav-items">
       <a href="#">Home</a>
       <a href="#">About Us</a>
@@ -26,16 +27,16 @@
 
   <section>
     <div class="hero">
-  <section>
-    <div class="hero">
-      <div class="hero-item">
-        <h1>Hello <br>I'm Deborah AMUZU</h1>
-        <p>A Junior Web Developer</p>
-        <button class="but" type="submit">View Portfolio</button>
-      </div>
-      <div class="hero-img"></div>
-      <img src="./image/hero-img.jpg" alt="profile-image">
-    </div>
+      <section>
+        <div class="hero">
+          <div class="hero-item">
+            <h1>Hello <br>I'm Deborah AMUZU</h1>
+            <p>A Junior Web Developer</p>
+            <button class="but" type="submit">View Portfolio</button>
+          </div>
+          <div class="hero-img"></div>
+          <img src="./image/hero-img.jpg" alt="profile-image">
+        </div>
     </div>
   </section>
 
@@ -250,14 +251,14 @@
       <span>by Debbie</span>
     </h4>
   </footer>
-  <script src="./tanslate.js"></script>
   <script type="text/javascript">
     function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en'}, 
-    'google_translate_element');
-  }
+      new google.translate.TranslateElement({ pagelanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'translator');
+    }
   </script>
-   <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-   </script>
+
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+  </script>
 </body>
+
 </html>
