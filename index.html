@@ -7,10 +7,7 @@
   <title>MY PORTFOLIO</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -21,7 +18,7 @@
     <div id="translator"></div>
     <div class="nav-items">
       <a href="#">Home</a>
-      <a href="#">About</a>
+      <a href="">About</a>
       <a href="#">Services</a>
       <a href="#">Portfolio</a>
       <a href="#">Contact</a>
@@ -30,21 +27,23 @@
 
   <section>
     <div class="hero">
-      <div class="hero-item w-[80%] ml-32">
+      <div class="hero-item w-[80%]">
         <h1>Hello</h1>
         <h1>I'm Deborah AMUZU</h1>
         <p class="font-bold animate__ animate_delay-3s">A Junior Frontend Web Developer</p>
-        <a  class="mt-20" href="">View Portfolio</a>
+        <a class="" href="">View Portfolio</a>
       </div>
       <div class=" w-[50vw] mr-20  mt-20 ">
-        <img class="hero-img" src="./image/hero-img.jpg" alt="profile-image">
+        <img class="hero-img" src="./image/curr.jpg" alt="profile-image">
       </div>
-
     </div>
-
   </section>
 
-  <section class="about">
+  <section class="flex w-[100vw] h-[100vh] bg-white">
+
+    <div class="h-[100%] w-[100%]  ">
+      <img class=" h-[100%] object-fit " src="./image/IMG-20230821-WA0018.jpg " alt="">
+    </div>
     <!-- <div class="sidebar1">
       <h2>Sidebar</h2>
       <ul>
@@ -54,169 +53,192 @@
           <li><a href="#">Contact</a></li>
       </ul>
   </div> -->
-    <div class="about-us">
-
+    <div class="about">
       <h5>ABOUT ME</h5>
       <h1>WHO AM I</h1>
-      <p>
-        Hello! I'm Deborah Amuzu, a passionate Junior front-end web developer with a love for building a dynamic and
+      <p class="">
+        Hello! I'm Deborah Amuzu, a passionate Junior front-end web developer with a love for building a dynamic
+        and
         user-friendly web applications.
-        I embarked on my coding journey when I joined the <abbr
-          title="Meltwater Entrepreneurial School of Technology ">MEST</abbr>
-        program in September 2024 and I discovered the incredible world of technology and its potential to solve
+        I embarked on my coding journey when I joined the MEST
+        program in September 2024 and I discovered the incredible world of technology and its potential to
+        solve
         real-world problems.
       </p>
-      <button type="submit">MORE</button>
+      <a href="./cv/Deborah Amuzu - MEST CV.pdf" class="button " type="submit">MORE</a>
     </div>
   </section>
 
-  <section class="proj">
-    <h1>
-      I am happy to tell you that i have successfully <br> completed 3+ projects and <br>still counting.......</h1>
-    <button type="submit" class="bt">HIRE ME</button>
+  <section class="m-10">
+    <div class=" flex flex-col">
+      <h1 class="font-bold text-[30px] text-[ #2C4659] pb-10 justify-center flex">RESUME</h1>
+      <div class=" grid grid-cols-2 grid-rows-2 gap-10 text-[#2C4659]">
+        <div class="shadow-lg p-10 mb-10 bg-white text-[#2C4659]">
+          <h2 class="text-2xl text-[#2C4659] underline font-bold text-center">Education</h2>
+          <div class="flex justify-evenly font-bold italic text-2xl pb-5">
+            <h1>Certificate</h1>
+            <h1>Institution</h1>
+            <h1>Year</h1>
+          </div>
+          <div class="grid grid-cols-3 gap-28 text-2xl pb-5">
+            <h2 class="w-[200%]">Certificate in Front-end Web Development,</h2>
+            <h3 class="entry pl-10">
+              <abbr title="Meltwater Entrepreneurial School of Technology ">MEST</abbr>
+            </h3>
+            <p class="entry"> 2024</p>
+          </div>
+
+          <div class="grid grid-cols-3 gap-28 text-2xl pb-5">
+            <h2 class="w-[200%] ">Post-Graduate Degree Agrometeorology,</h2>
+            <h3 class="entry w-[200%] pl-10">
+              <abbr title="Centre Climatique Régional du Afrique d'Ouest et le Sahel ">CCR-AOS
+                <abbr title="Agriculture Hydrology Meteorology">AGRHYMET</abbr></abbr>
+            </h3>
+            <p class="entry"> 2024</p>
+          </div>
+          <div class="grid grid-cols-3 gap-28 text-2xl pb-5">
+            <h2 class="w-[200%]">Attestation in French </h2>
+            <h3 class="entry w-[200%] pl-10">
+              <abbr title="Centre Climatique Régional du Afrique d'Ouest et le Sahel ">CCR-AOS</abbr>
+              <abbr title="Agriculture Hydrology Meteorology">AGRHYMET</abbr>
+            </h3>
+            <p class="entry"> 2024</p>
+          </div>
+
+          <div class="grid grid-cols-3 gap-28 text-2xl pb-5">
+            <h2 class="w-[200%]">HND in Science Laboratory Technology </h2>
+            <h3 class="entry w-[200%] pl-10">
+              Accra Technical University
+            </h3>
+            <p class="entry"> 2016</p>
+          </div>
+        </div>
+
+        <div class="shadow-lg p-10 mb-10 bg-white text-[#2C4659]">
+          <div class="text-center text-2xl text-[#2C4659]">
+            <h2 class="underline" font-bold>Skills in Programming</h2>
+            <div class="flex justify-evenly font-bold italic text-2xl pb-5">
+              <h1>Language</h1>
+              <h1>Level</h1>
+            </div>
+
+            <div class="  grid grid-cols-2 gap-20">
+              <h2 class="w-[100%]">HTML</h2>
+              <h3 class="entry pl-5">
+                <div class="bar">
+                  <div class="fill" style="width: 70%;"></div>
+                </div>
+                <span class="float-right">70%</span>
+              </h3>
+            </div>
+            <div class=" grid grid-cols-2 gap-20 skill">
+              <h2 class="w-[100%]">CSS</h2>
+              <h3 class="entry pl-5">
+                <div class="bar">
+                  <div class="fill" style="width: 60%;"></div>
+                </div>
+                <span class="float-right">60%</span>
+              </h3>
+            </div>
+            <div class=" grid grid-cols-2 gap-20 ">
+              <h2 class="w-[100%]">Tailwind </h2>
+              <h3 class="entry pl-5">
+                <div class="bar">
+                  <div class="fill" style="width: 60%;"></div>
+                </div>
+                <span class="float-right">60%</span>
+              </h3>
+            </div>
+            <div class=" grid grid-cols-2 gap-20 ">
+              <h2 class="w-[100%]">JavaScript </h2>
+              <h3 class="entry pl-5">
+                <div class="bar">
+                  <div class="fill" style="width: 40%;"></div>
+                </div>
+                <span class="float-right">40%</span>
+              </h3>
+            </div>
+
+            <div class="flex justify-evenly font-bold italic text-2xl pb-5 pt-5">
+              <h1>Frameworks</h1>
+              <h1>Level</h1>
+            </div>
+            <div class=" grid grid-cols-2 gap-20 pb-5 pt-5">
+              <h2 class="w-[100%]">React (VITE)</h2>
+              <h3 class="entry pl-5">
+                <div class="bar">
+                  <div class="fill" style="width: 50%;"></div>
+                </div>
+                <span class="float-right">50%</span>
+              </h3>
+            </div>
+            <div class="flex justify-evenly font-bold italic text-2xl ">
+              <h1>Version Control and Hosting</h1>
+              <h1>Level</h1>
+            </div>
+            <div class=" grid grid-cols-2 gap-20 pb-5 pt-5">
+              <h2 class="w-[100%]">Git and Github</h2>
+              <h3 class="entry pl-5">
+                <div class="bar">
+                  <div class="fill" style="width: 60%;"></div>
+                </div>
+                <span class="float-right">60%</span>
+              </h3>
+            </div>
+            <div class=" grid grid-cols-2 gap-20">
+              <h2 class="w-[100%]">Netlify</h2>
+              <h3 class="entry pl-5">
+                <div class="bar">
+                  <div class="fill" style="width: 50%;"></div>
+                </div>
+                <span class="float-right">50%</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="shadow-lg p-10 bg-white h-[300px] bg-white text-[#2C4659]">
+          <h2 class="text-2xl text-[#2C4659] underline font-bold text-center">Soft Skills</h2>
+          <div class="  grid grid-cols-2 grid-rows-2 gap-5 pt-5">
+            <p class=" border-2  border-[#daa520] text-2xl hover:bg-[#daa520] text-[#2C4659]">Great Communicator</p>
+            <p class=" border-2  border-[#daa520] text-2xl hover:bg-[#daa520] text-[#2C4659]">Team Player</p>
+            <p class=" border-2  border-[#daa520] text-2xl hover:bg-[#daa520] text-[#2C4659]">Attention to Details</p>
+            <p class=" border-2  border-[#daa520] text-2xl hover:bg-[#daa520] text-[#2C4659]">Persistent</p>
+            <p class=" border-2  border-[#daa520] text-2xl hover:bg-[#daa520] text-[#2C4659]">Future Oriented</p>
+          </div>
+        </div>
+
+
+        <div class="shadow-lg p-10 mb-10 bg-white h-[300px] text-[#2C4659]">
+          <h2 class="text-2xl text-[#2C4659] underline font-bold text-center">Experience</h2>
+          <div class=" text-2xl pb-5">
+            <h1>I have build on six (6) webpages of which four are solo projects and two are collaborated projects </h1>
+          </div>
+          <a class="button ml-20" href="">View Projects</a>
+        </div>
+      </div>
   </section>
 
 
-  <section class="expertise">
-    <div>
-      <h5 class="font-serif text-3md">WHAT I DO</h5>
-      <h1 class="font-mono font-bold text-2xl">HERE ARE SOME OF MY EXPERTISE</h1>
-    </div>
-  </section>
 
-  <section class="growth glass">
-    <div class="growth-item">
-      <h2>309</h2>
-      <p>CUPS OF<br>COFFEE</p>
-    </div>
-    <div class="growth-item">
-      <h2>356</h2>
-      <p>PROJECTS</p>
-    </div>
-    <div class="growth-item">
-      <h2>50</h2>
-      <p>CLIENTS <br>COUNTING..</p>
-    </div>
-    <div class="growth-item">
-      <h2>10</h2>
-      <p>PARTNERS</p>
-    </div>
-    <div class="growth-item">
-      <h2>10K</h2>
-      <p>SUBSCRIBERS</p>
-    </div>
-  </section>
-
-  <section class="border">
-    <div class="skill">
-      <h5>MY SPECIALTY</h5>
-      <h1>MY SKILLS</h1>
-      <p>These are my skills in web development languages however, these skills augment on a daily basis</p>
-    </div>
-    <div class="scale">
-      <div>
-        <p>HTML</p>
-        <meter class="w-[60%]" min="0" max="100" value="50" low="20" high="80" optimum="60"></meter>50%
-      </div>
-      <div>
-        <p>CSS</p>
-        <meter class="w-[60%]" min="0" max="100" value="50" low="20" high="80" optimum="60"></meter>50%
-      </div>
-      <div>
-        <p>Tailwind-CSS</p>
-        <meter class="w-[60%]" min="0" max="100" value="40" low="20" high="80" optimum="60"></meter>30%
-      </div>
-      <div>
-        <p>JavaScript</p>
-        <meter class="w-[60%]" min="0" max="100" value="10" low="20" high="80" optimum="60"></meter>10%
-      </div>
-    </div>
-    <!-- <div class="scale">
-      <p>HTML</p>
-      <progress max="100" value="50"></progress>50%
-      <p>CSS</p>
-      <progress max="100" value="50"></progress>50%
-      <p>Tailwind-CSS</p>
-      <progress max="100" value="40"></progress>40%
-      <p>JavaScript</p>
-      <progress max="100" value="10"></progress>10%
-    </div> -->
-
-  </section>
-
-  <section class="bord">
-    <div>
-      <h1 class="education">EDUCATION</h3>
-    </div>
-    <div>
-      <details class="detail">
-        <summary>CERTIFICATION IN WEB DEVELOPMENT</summary>
-        Obtained a certificate from<abbr title="Meltwater Entrepreneurial School of Technology ">MEST</abbr>
-        <p>Year <br>2024</p>
-      </details>
-      <details class="detail">
-        <summary>MASTER DEGREE AGROMETEOROLOGY</summary>
-        Obtained a master degree from <abbr title="Centre Climatique Régional du Afrique d'Ouest et le Sahel ">CCR-AOS
-          <abbr title="Agriculture Hydrology Meteorology">(AGRHYMET)</abbr></abbr>
-        <p>Year <br>2024</p>
-      </details>
-      <details class="detail">
-        <summary>ATTESTATION IN FRENCH</summary>
-        Obtained an Attestation from <abbr title="Centre Climatique Régional du Afrique d'Ouest et le Sahel ">CCR-AOS
-          <abbr title="Agriculture Hydrology Meteorology">(AGRHYMET)</abbr></abbr>
-        <p>Year <br>2020</p>
-      </details>
-      <details class="detail">
-        <summary>HIGHER NATIONAL DIPLOMA</summary>
-        Obtained an HND from <abbr title="Accra Technical University ">ATU</abbr>
-        <p>Year <br>2016</p>
-      </details>
-    </div>
-  </section>
-
-  <section class="experience">
-    <h3>EXPERIENCE</h3>
-    <h1>WORK EXPERIENCE</h1>
-    <div class="experience-item">
-      <div class="icon-container ic">
-        <i class="ic"></i>
-      </div>
-      <div class="experience-content">
-        <h3>Full Stack Developer at MEST<span class="year">2024-present</span></h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, veritatis..</p>
-      </div>
-    </div>
-    <div class="experience-item">
-      <div class="icon-container ic">
-        <i class="ic"></i>
-      </div>
-      <div class="experience-content">
-        <h3>Front End Developer at MEST <span class="year">2024-present</span></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ipsam!</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="info border">
-    <h1 class="font">CONTACT ME</h1>
+  <section class="info">
+    <h1 class="font pb-10 ">CONTACT ME</h1>
     <div class="all">
-      <div class="contact-text">
+      <div class="contact-text text-2xl">
         <h1>
           If Not Now, When? Let's Work Together!
         </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus <br>repellat, ex reiciendis
-          distinctio nihil! A reiciendis blanditiis hic est.
-        </p>
+        <h2 class="text-2xl">Let's Collaborate to make great imagination come to existence
+        </h2>
       </div>
-      <div>
+      <div class="w-[50%]">
         <form class="form-contact">
           <input class="cont" type="name" placeholder="Enter Full Nmae">
           <input class="cont" type="email" placeholder="Enter Email Address">
           <input class="cont" type="text" placeholder="Enter Your Message">
-          <button type="submit">Send</button>
+          <a href='mailto:debamuzudeb@gmail.com' class="button text-center mr-20 ml-20" type="submit">Send</a>
         </form>
       </div>
-
     </div>
   </section>
 
@@ -228,20 +250,12 @@
       <h2>My Contact Details</h2>
       <div class="office">
         <h3>EMAIL:</h3>
-        <p>debamuzudeb@gmail.com</p>
+        <a  class='font-bold' href="mailto:debamuzudeb@gmail.com">debamuzudeb@gmail.com
+        </a>
       </div>
       <div class="office">
         <h3>PHONE:</h3>
         <p>+233 571 270 912</p>
-      </div>
-      <div class="office">
-        <h3>ADDRESS:</h3>
-        <h6>
-          <p>ACCRA, GHANA</p>
-          <p>7TH FLOOR, BURO</p>
-          <p>OSU-ACCRA</p>
-        </h6>
-
       </div>
     </div>
     </p>
@@ -259,8 +273,7 @@
       <a href="#">Contact Us</a>
     </h4>
     <h4 class="Copyright">
-      Copyright ©2024 All rights reserved | This portofolio template is made with <i class="fa fa-heart "></i>
-      <span>by Debbie</span>
+      Copyright ©2024 All rights reserved 
     </h4>
   </footer>
   <script type="text/javascript">
