@@ -12,40 +12,69 @@
 </head>
 
 <body>
-  <!-- https://themewagon.github.io/rezume/     https://themewagon.github.io/dominic/ -->
-  <nav class="nav-bar">
-    <div class="brand">D.Amuzu</div>
-    <div id="translator"></div>
-    <div class="nav-items">
-      <a href="#">Home</a>
-      <a href="">About</a>
-      <a href="#">Services</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Contact</a>
+  <nav class="fixed w-full  bg-[#2C4659] flex flex-col md:flex-row justify-between items-center p-4">
+    <div class="flex font-bold text-[#daa520] text-[32px] md:text-[40px] tracking-[3px]"
+      style="font-family: 'Brush Script MT', cursive;">D.Amuzu</div>
+
+    <div class="md:hidden flex flex-col cursor-pointer" onclick="toggleMenu()">
+      <div class="h-1 w-6 bg-[#F2EDE6] mb-1"></div>
+      <div class="h-1 w-6 bg-[#F2EDE6] mb-1"></div>
+      <div class="h-1 w-6 bg-[#F2EDE6]"></div>
+    </div>
+
+    <div id="menu" class="menu hidden md:flex flex-col md:flex-row justify-center items-center gap-4 mt-2 md:mt-0">
+
+      <a class="font-sans italic text-[14px] md:text-[16px] font-bold transition-colors duration-500 text-[#F2EDE6] hover:text-[#daa520]"
+        href="#">Home</a>
+      <a class="font-sans italic text-[14px] md:text-[16px] font-bold transition-colors duration-500 text-[#F2EDE6] hover:text-[#daa520]"
+        href="#About">About</a>
+      <a class="font-sans italic text-[14px] md:text-[16px] font-bold transition-colors duration-500 text-[#F2EDE6] hover:text-[#daa520]"
+        href="#Port">Portfolio</a>
+      <a class="font-sans italic text-[14px] md:text-[16px] font-bold transition-colors duration-500 text-[#F2EDE6] hover:text-[#daa520]"
+        href="#Contact">Contact</a>
+
+        <a href="https://www.facebook.com/deborahh.amuzu?mibextid=ZbWKwL" class="text-white text-[18px]"><i class="fa fa-facebook text-white rounded-full p-1 bg-yellow-500 w-7 h-7 justify-center items-center flex hover:bg-yellow-600"></i></a>
+        <a href="https://www.instagram.com/deborah_amuzu/profilecard/?igsh=MTRrcnI4dmM1NzI5" class="text-white text-[18px]"><i class="fa fa-instagram text-white rounded-full p-1 bg-yellow-500 w-7 h-7 justify-center items-center flex  hover:bg-yellow-600"></i></a>
+        <a href="http://www.linkedin.com/in/deborah-amuzu-88541122a" class=" text-[18px]"><i class="fa fa-linkedin text-white rounded-full p-1 bg-yellow-500 w-7 h-7 justify-center items-center flex hover:bg-yellow-600"></i></a>
     </div>
   </nav>
 
-  <section>
-    <div class="hero">
-      <div class="hero-item w-[80%]">
-        <h1>Hello</h1>
-        <h1>I'm Deborah AMUZU</h1>
-        <p class="font-bold animate__ animate_delay-3s">A Junior Frontend Web Developer</p>
-        <a class="" href="">View Portfolio</a>
+
+  <!-- <div class="bg-[#F2EDE6] grid grid-cols-2 grid-rows-1  w-100vw h-screen">
+      <div class="pt-40 w-full ml-10 space-y-5 pl-32 h-full">
+        <h1 class="text-3xl  font-bold font-serif">Hello !</h1>
+        <h1 class="text-3xl font-bold font-serif">I'm Deborah AMUZU</h1>
+        <p class="font-bold animate__ animate_delay-3s  pb-[20px]  text-3xl italic font-serif" style="font-family: Cambria, Cochin, Georgia, Times, serif;">A Junior Frontend Web Developer</p>
+        
+        <a class="border border-[rgb(218,165,32)] ml-[50px] text-[#0f1214] rounded-[50px] font-bold tracking-[2.5px] px-[30px] mt-[20px] pt-[5px] pb-[5px] text-[25px] hover:bg-[rgb(218,165,32)] transition duration-2000" href="#">View Portfolio</a>
       </div>
-      <div class=" w-[50vw] mr-20  mt-20 ">
-        <img class="hero-img" src="./image/curr.jpg" alt="profile-image">
+
+      <div class=" w-full pt-20  ">
+        <img class="relative ml-[60px] object-cover object-center rounded-full  border-blue-900 border-2  w-[70%] h-[90%]" src="./image/headshot2.jpg" alt="profile-image">
       </div>
     </div>
-  </section>
+   -->
+  <div class="bg-[#F2EDE6] grid grid-cols-2 md:grid-cols-2 w-full lg:h-screen md:h-full">
+    <div class="flex flex-col justify-center items-start pt-20 px-6 md:pl-32 space-y-5 ">
+      <h1 class="text-3xl font-bold font-serif sm:mt-10">Hello!</h1>
+      <h1 class="text-3xl font-bold font-serif">I'm Deborah AMUZU</h1>
+      <p class="font-bold text-3xl italic font-serif">A Junior Frontend Web Developer</p>
+      <a class="border border-[rgb(218,165,32)] text-[#0f1214] rounded-full font-bold tracking-[2.5px] px-8 mt-5 pt-2 pb-2 text-lg hover:bg-[rgb(218,165,32)] transition duration-500"
+        href="#Port">View Portfolio</a>
+    </div>
 
-  <section class="flex w-[100vw] h-[100vh] bg-white">
+    <div class="flex justify-center pt-10 mt-[60px]">
+      <img class="object-cover object-center rounded-full border-blue-900 border-2 w-[80%] h-auto "
+        src="./image/headshot2.jpg" alt="profile-image">
+    </div>
+  </div>
 
+  <section id="About" class="flex w-[100vw] h-[100vh] bg-white">
     <div class="h-[100%] w-[100%]  ">
-      <img class=" h-[100%] object-fit " src="./image/IMG-20230821-WA0018.jpg " alt="">
+      <img class=" h-[100%] object-contain " src="./image/curr.jpg " alt="">
     </div>
-    <!-- <div class="sidebar1">
-      <h2>Sidebar</h2>
+    <!-- <div class="sidebg-[rgb(143,143,148)] h-[10px] rounded-[5px] my-11">
+      <h2>Sidebg-[rgb(143,143,148)] h-[10px] rounded-[5px] my-1</h2>
       <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -53,10 +82,10 @@
           <li><a href="#">Contact</a></li>
       </ul>
   </div> -->
-    <div class="about">
+    <div class="about bg-[#daa520]text-white">
       <h5>ABOUT ME</h5>
       <h1>WHO AM I</h1>
-      <p class="">
+      <p class="pb-10">
         Hello! I'm Deborah Amuzu, a passionate Junior front-end web developer with a love for building a dynamic
         and
         user-friendly web applications.
@@ -65,226 +94,253 @@
         solve
         real-world problems.
       </p>
-      <a href="./cv/Deborah Amuzu - MEST CV.pdf" class="button " type="submit">MORE</a>
+      <a href="./cv/Deborah Amuzu - MEST CV.pdf"
+        class="border border-[#2c4659] text-white rounded-full px-[35px] py-2 text-[25px] tracking-[2.5px] mt-2 transition duration-2000 hover:bg-blue-900 bg-[#2c4659] "
+        type="submit">MORE</a>
     </div>
   </section>
 
-  <section class="m-10">
-    <div class=" flex flex-col">
-      <h1 class="font-bold text-[30px] text-[ #2C4659] pb-10 justify-center flex">RESUME</h1>
-      <div class=" grid grid-cols-2 grid-rows-2 gap-10 text-[#2C4659]">
-        <div class="shadow-lg p-10 mb-10 bg-white text-[#2C4659]">
+  <section id="Port" class="m-5 md:m-10">
+    <div class="flex flex-col">
+      <h1 class="font-bold text-[30px] text-[#2C4659] pb-10 justify-center flex">RESUME</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-[#2C4659]">
+        <!-- Education Section -->
+        <div class="shadow-lg p-5 md:p-10 mb-10 bg-white text-[#2C4659]">
           <h2 class="text-2xl text-[#2C4659] underline font-bold text-center">Education</h2>
-          <div class="flex justify-evenly font-bold italic text-2xl pb-5">
+          <div class="flex justify-evenly font-bold italic text-xl md:text-2xl pb-5">
             <h1>Certificate</h1>
             <h1>Institution</h1>
             <h1>Year</h1>
           </div>
-          <div class="grid grid-cols-3 gap-28 text-2xl pb-5">
-            <h2 class="w-[200%]">Certificate in Front-end Web Development,</h2>
-            <h3 class="entry pl-10">
-              <abbr title="Meltwater Entrepreneurial School of Technology ">MEST</abbr>
-            </h3>
-            <p class="entry"> 2024</p>
-          </div>
 
-          <div class="grid grid-cols-3 gap-28 text-2xl pb-5">
-            <h2 class="w-[200%] ">Post-Graduate Degree Agrometeorology,</h2>
-            <h3 class="entry w-[200%] pl-10">
-              <abbr title="Centre Climatique Régional du Afrique d'Ouest et le Sahel ">CCR-AOS
-                <abbr title="Agriculture Hydrology Meteorology">AGRHYMET</abbr></abbr>
-            </h3>
-            <p class="entry"> 2024</p>
+          <!-- Education Entries -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-xl md:text-2xl pb-5">
+            <h2 class="w-[100%]">Certificate in Entrepreneurship & Innovation</h2>
+            <h3 class="relative pl-2 border-l border-[#333] pl-10">Forage</h3>
+            <p class="relative pl-2 border-l border-[#333]">2024</p>
           </div>
-          <div class="grid grid-cols-3 gap-28 text-2xl pb-5">
-            <h2 class="w-[200%]">Attestation in French </h2>
-            <h3 class="entry w-[200%] pl-10">
-              <abbr title="Centre Climatique Régional du Afrique d'Ouest et le Sahel ">CCR-AOS</abbr>
-              <abbr title="Agriculture Hydrology Meteorology">AGRHYMET</abbr>
-            </h3>
-            <p class="entry"> 2024</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-xl md:text-2xl pb-5">
+            <h2 class="w-[100%]">Badge in Web Development Fundamentals</h2>
+            <h3 class="relative pl-2 border-l border-[#333] pl-10">IBM SkillsBuild</h3>
+            <p class="relative pl-2 border-l border-[#333]">2024</p>
           </div>
-
-          <div class="grid grid-cols-3 gap-28 text-2xl pb-5">
-            <h2 class="w-[200%]">HND in Science Laboratory Technology </h2>
-            <h3 class="entry w-[200%] pl-10">
-              Accra Technical University
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-xl md:text-2xl pb-5">
+            <h2 class="w-[100%]">Certificate in Front-end Web Development</h2>
+            <h3 class="relative pl-2 border-l border-[#333] pl-10">
+              <abbr title="Meltwater Entrepreneurial School of Technology">MEST</abbr>
             </h3>
-            <p class="entry"> 2016</p>
+            <p class="relative pl-2 border-l border-[#333]">2024</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-xl md:text-2xl pb-5">
+            <h2 class="w-[100%]">Post-Graduate Degree in Agrometeorology</h2>
+            <h3 class="relative pl-2 border-l border-[#333] pl-10">
+              <abbr title="CCR-AOS">CCR-AOS <abbr title="AGRHYMET">AGRHYMET</abbr></abbr>
+            </h3>
+            <p class="relative pl-2 border-l border-[#333]">2024</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-xl md:text-2xl pb-5">
+            <h2 class="w-[100%]">Attestation in French</h2>
+            <h3 class="relative pl-2 border-l border-[#333] pl-10">
+              <abbr title="CCR-AOS">CCR-AOS <abbr title="AGRHYMET">AGRHYMET</abbr></abbr>
+            </h3>
+            <p class="relative pl-2 border-l border-[#333]">2024</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-xl md:text-2xl pb-5">
+            <h2 class="w-[100%]">HND in Science Laboratory Technology</h2>
+            <h3 class="relative pl-2 border-l border-[#333] pl-10">Accra Technical University</h3>
+            <p class="relative pl-2 border-l border-[#333]">2016</p>
           </div>
         </div>
 
-        <div class="shadow-lg p-10 mb-10 bg-white text-[#2C4659]">
-          <div class="text-center text-2xl text-[#2C4659]">
-            <h2 class="underline" font-bold>Skills in Programming</h2>
-            <div class="flex justify-evenly font-bold italic text-2xl pb-5">
-              <h1>Language</h1>
-              <h1>Level</h1>
-            </div>
+        <!-- Skills Section -->
+        <div class="shadow-lg p-5 md:p-10 mb-10 bg-white text-[#2C4659]">
+          <h2 class="text-2xl text-[#2C4659] underline font-bold text-center">Skills in Programming</h2>
+          <div class="flex justify-evenly font-bold italic text-xl md:text-2xl pb-5">
+            <h1>Language</h1>
+            <h1>Level</h1>
+          </div>
 
-            <div class="  grid grid-cols-2 gap-20">
-              <h2 class="w-[100%]">HTML</h2>
-              <h3 class="entry pl-5">
-                <div class="bar">
-                  <div class="fill" style="width: 70%;"></div>
-                </div>
-                <span class="float-right">70%</span>
-              </h3>
-            </div>
-            <div class=" grid grid-cols-2 gap-20 skill">
-              <h2 class="w-[100%]">CSS</h2>
-              <h3 class="entry pl-5">
-                <div class="bar">
-                  <div class="fill" style="width: 60%;"></div>
-                </div>
-                <span class="float-right">60%</span>
-              </h3>
-            </div>
-            <div class=" grid grid-cols-2 gap-20 ">
-              <h2 class="w-[100%]">Tailwind </h2>
-              <h3 class="entry pl-5">
-                <div class="bar">
-                  <div class="fill" style="width: 60%;"></div>
-                </div>
-                <span class="float-right">60%</span>
-              </h3>
-            </div>
-            <div class=" grid grid-cols-2 gap-20 ">
-              <h2 class="w-[100%]">JavaScript </h2>
-              <h3 class="entry pl-5">
-                <div class="bar">
-                  <div class="fill" style="width: 40%;"></div>
-                </div>
-                <span class="float-right">40%</span>
-              </h3>
-            </div>
+          <!-- Programming Skills Entries -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pb-5">
+            <h2 class="w-[100%]">HTML</h2>
+            <h3 class="relative pl-2 border-l border-[#333] pl-5">
+              <div class="bg-[rgb(143,143,148)] h-[10px] rounded-[5px] my-1">
+                <div class="bg-[#160a2b] h-full rounded-[5px]" style="width:70%;"></div>
+              </div>
+              <span class="float-right">70%</span>
+            </h3>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pb-5">
+            <h2 class="w-[100%]">CSS</h2>
+            <h3 class="relative pl-2 border-l border-[#333] pl-5">
+              <div class="bg-[rgb(143,143,148)] h-[10px] rounded-[5px] my-1">
+                <div class="bg-[#160a2b] h-full rounded-[5px]" style="width:60%;"></div>
+              </div>
+              <span class="float-right">60%</span>
+            </h3>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pb-5">
+            <h2 class="w-[100%]">Tailwind</h2>
+            <h3 class="relative pl-2 border-l border-[#333] pl-5">
+              <div class="bg-[rgb(143,143,148)] h-[10px] rounded-[5px] my-1">
+                <div class="bg-[#160a2b] h-full rounded-[5px]" style="width:60%;"></div>
+              </div>
+              <span class="float-right">60%</span>
+            </h3>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pb-5">
+            <h2 class="w-[100%]">JavaScript</h2>
+            <h3 class="relative pl-2 border-l border-[#333] pl-5">
+              <div class="bg-[rgb(143,143,148)] h-[10px] rounded-[5px] my-1">
+                <div class="bg-[#160a2b] h-full rounded-[5px]" style="width:40%;"></div>
+              </div>
+              <span class="float-right">40%</span>
+            </h3>
+          </div>
 
-            <div class="flex justify-evenly font-bold italic text-2xl pb-5 pt-5">
-              <h1>Frameworks</h1>
-              <h1>Level</h1>
-            </div>
-            <div class=" grid grid-cols-2 gap-20 pb-5 pt-5">
-              <h2 class="w-[100%]">React (VITE)</h2>
-              <h3 class="entry pl-5">
-                <div class="bar">
-                  <div class="fill" style="width: 50%;"></div>
-                </div>
-                <span class="float-right">50%</span>
-              </h3>
-            </div>
-            <div class="flex justify-evenly font-bold italic text-2xl ">
-              <h1>Version Control and Hosting</h1>
-              <h1>Level</h1>
-            </div>
-            <div class=" grid grid-cols-2 gap-20 pb-5 pt-5">
-              <h2 class="w-[100%]">Git and Github</h2>
-              <h3 class="entry pl-5">
-                <div class="bar">
-                  <div class="fill" style="width: 60%;"></div>
-                </div>
-                <span class="float-right">60%</span>
-              </h3>
-            </div>
-            <div class=" grid grid-cols-2 gap-20">
-              <h2 class="w-[100%]">Netlify</h2>
-              <h3 class="entry pl-5">
-                <div class="bar">
-                  <div class="fill" style="width: 50%;"></div>
-                </div>
-                <span class="float-right">50%</span>
-              </h3>
-            </div>
+          <div class="flex justify-evenly font-bold italic text-xl md:text-2xl pb-5 pt-5">
+            <h1>Frameworks</h1>
+            <h1>Level</h1>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pb-5 pt-5">
+            <h2 class="w-[100%]">React (VITE)</h2>
+            <h3 class="relative pl-2 border-l border-[#333] pl-5">
+              <div class="bg-[rgb(143,143,148)] h-[10px] rounded-[5px] my-1">
+                <div class="bg-[#160a2b] h-full rounded-[5px]" style="width:50%;"></div>
+              </div>
+              <span class="float-right">50%</span>
+            </h3>
+          </div>
+          <div class="flex justify-evenly font-bold italic text-xl md:text-2xl ">
+            <h1>Version Control and Hosting</h1>
+            <h1>Level</h1>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pb-5 pt-5">
+            <h2 class="w-[100%]">Git and Github</h2>
+            <h3 class="relative pl-2 border-l border-[#333] pl-5">
+              <div class="bg-[rgb(143,143,148)] h-[10px] rounded-[5px] my-1">
+                <div class="bg-[#160a2b] h-full rounded-[5px]" style="width:60%;"></div>
+              </div>
+              <span class="float-right">60%</span>
+            </h3>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <h2 class="w-[100%]">Netlify</h2>
+            <h3 class="relative pl-2 border-l border-[#333] pl-5">
+              <div class="bg-[rgb(143,143,148)] h-[10px] rounded-[5px] my-1">
+                <div class="bg-[#160a2b] h-full rounded-[5px]" style="width:50%;"></div>
+              </div>
+              <span class="float-right">50%</span>
+            </h3>
           </div>
         </div>
 
-        <div class="shadow-lg p-10 bg-white h-[300px] bg-white text-[#2C4659]">
+        <!-- Soft Skills Section -->
+        <div class="shadow-lg p-5 md:p-10 mb-10 bg-white text-[#2C4659]">
           <h2 class="text-2xl text-[#2C4659] underline font-bold text-center">Soft Skills</h2>
-          <div class="  grid grid-cols-2 grid-rows-2 gap-5 pt-5">
-            <p class=" border-2  border-[#daa520] text-2xl hover:bg-[#daa520] text-[#2C4659]">Great Communicator</p>
-            <p class=" border-2  border-[#daa520] text-2xl hover:bg-[#daa520] text-[#2C4659]">Team Player</p>
-            <p class=" border-2  border-[#daa520] text-2xl hover:bg-[#daa520] text-[#2C4659]">Attention to Details</p>
-            <p class=" border-2  border-[#daa520] text-2xl hover:bg-[#daa520] text-[#2C4659]">Persistent</p>
-            <p class=" border-2  border-[#daa520] text-2xl hover:bg-[#daa520] text-[#2C4659]">Future Oriented</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 pt-5">
+            <p class="border-2 border-[#daa520] text-xl hover:bg-[#daa520] text-[#2C4659] text-center p-2">Great
+              Communicator</p>
+            <p class="border-2 border-[#daa520] text-xl hover:bg-[#daa520] text-[#2C4659] text-center p-2">Team Player
+            </p>
+            <p class="border-2 border-[#daa520] text-xl hover:bg-[#daa520] text-[#2C4659] text-center p-2">Attention to
+              Details</p>
+            <p class="border-2 border-[#daa520] text-xl hover:bg-[#daa520] text-[#2C4659] text-center p-2">Persistent
+            </p>
+            <p class="border-2 border-[#daa520] text-xl hover:bg-[#daa520] text-[#2C4659] text-center p-2">Future
+              Oriented</p>
           </div>
         </div>
 
-
-        <div class="shadow-lg p-10 mb-10 bg-white h-[300px] text-[#2C4659]">
+        <!-- Experience Section -->
+        <div class="shadow-lg p-5 md:p-10 mb-10 bg-white text-[#2C4659]">
           <h2 class="text-2xl text-[#2C4659] underline font-bold text-center">Experience</h2>
-          <div class=" text-2xl pb-5">
-            <h1>I have build on six (6) webpages of which four are solo projects and two are collaborated projects </h1>
+          <div class="text-xl pb-5">
+            <h1>I have built six (6) webpages, four of which are solo projects and two are collaborative projects.</h1>
           </div>
-          <a class="button ml-20" href="">View Projects</a>
+          <a class="border border-[#daa520] text-[#0f1214] rounded-full px-[35px] py-2 text-[25px] tracking-[2.5px] mt-2 transition duration-2000 hover:bg-[rgb(218,165,32)] ml-20"
+            href="./PROJECT/projects.pdf">
+            View Projects
+          </a>
         </div>
       </div>
-  </section>
-
-
-
-  <section class="info">
-    <h1 class="font pb-10 ">CONTACT ME</h1>
-    <div class="all">
-      <div class="contact-text text-2xl">
-        <h1>
-          If Not Now, When? Let's Work Together!
-        </h1>
-        <h2 class="text-2xl">Let's Collaborate to make great imagination come to existence
-        </h2>
-      </div>
-      <div class="w-[50%]">
-        <form class="form-contact">
-          <input class="cont" type="name" placeholder="Enter Full Nmae">
-          <input class="cont" type="email" placeholder="Enter Email Address">
-          <input class="cont" type="text" placeholder="Enter Your Message">
-          <a href='mailto:debamuzudeb@gmail.com' class="button text-center mr-20 ml-20" type="submit">Send</a>
-        </form>
-      </div>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="bbl">
-      <h1>Deborah Amuzu</h1>
-    </div>
-    <div class="contact-details">
-      <h2>My Contact Details</h2>
-      <div class="office">
-        <h3>EMAIL:</h3>
-        <a  class='font-bold' href="mailto:debamuzudeb@gmail.com">debamuzudeb@gmail.com
-        </a>
-      </div>
-      <div class="office">
-        <h3>PHONE:</h3>
-        <p>+233 571 270 912</p>
-      </div>
-    </div>
-    </p>
-    <p class="icon">
-      <i class="fa fa-facebook"></i>
-      <i class="fa fa-instagram"></i>
-      <i class="fa fa-twitter"></i>
-    </p>
-    <h4 class="foot-nav">
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Services</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Testimonials</a>
-      <a href="#">Contact Us</a>
-    </h4>
-    <h4 class="Copyright">
-      Copyright ©2024 All rights reserved 
-    </h4>
-  </footer>
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pagelanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'translator');
-    }
-  </script>
 
 
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-  </script>
+  <section id="Contact" class="flex flex-col justify-center items-center h-full p-4">
+    <h1 class="text-4xl pb-10" style="font-family: 'Brush Script MT', cursive;">CONTACT ME</h1>
+    <div class="flex flex-col md:flex-row gap-8 w-full max-w-6xl">
+        <div class="contact-text text-xl md:text-2xl flex-1">
+            <h1 class="font-serif pb-2">
+                If Not Now, When? Let's Work Together!
+            </h1>
+            <h2 class="text-xl md:text-2xl">
+                Let's Collaborate to make great imagination come to existence
+            </h2>
+        </div>
+        <div class="flex-1 ">
+            <form class="flex flex-col gap-4">
+                <input class="border border-solid border-[#db9442] h-[50px] outline-none px-2" type="text" placeholder="Enter Full Name" required>
+                <input class="border border-solid border-[#db9442] h-[50px] outline-none px-2" type="email" placeholder="Enter Email Address" required>
+                <input class="border border-solid border-[#db9442] h-[50px] outline-none px-2" type="text" placeholder="Enter Your Message" required>
+                <a href='mailto:debamuzudeb@gmail.com' class="border border-[#daa520] text-[#0f1214] rounded-full p-2 text-lg tracking-wide mt-2 transition duration-200 hover:bg-[rgb(218,165,32)] text-center w-32 font-bold">
+                    Send
+                </a>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-[url('./image/bg2.png')] flex flex-col justify-center items-center h-full w-full p-4">
+      <h1 class="text-2xl  font-cursive pt-5">Deborah Amuzu</h1>
+  <div class="flex flex-col justify-center text-center">
+      <h2 class="text-2xl font-bold mt-5">My Contact Details</h2>
+      <div class="flex flex-col md:flex-row justify-center gap-2 md:gap-6 ">
+          <div class="flex items-center">
+              <h3 class="mr-2"><span>✉️</span> EMAIL:</h3>
+              <a class='font-bold' href="mailto:debamuzudeb@gmail.com">debamuzudeb@gmail.com</a>
+          </div>
+          <div class="flex items-center">
+              <h3 class="mr-2"><span>📞</span> PHONE:</h3>
+              <p>+233 571 270 912</p>
+          </div>
+      </div>
+  </div>
+  <div class="flex justify-center items-center gap-4 mt-4">
+    <a href="https://www.facebook.com/deborahh.amuzu?mibextid=ZbWKwL" class="text-white text-[25px]"><i class="fa fa-facebook text-white rounded-full p-1 bg-[#2C4659] w-10 h-10 items-center justify-center flex hover:bg-yellow-600"></i></a>
+    <a href="https://www.instagram.com/deborah_amuzu/profilecard/?igsh=MTRrcnI4dmM1NzI5" class="text-white text-[25px]"><i class="fa fa-instagram text-white rounded-full p-1 bg-[#2C4659] w-10 h-10 items-center justify-center flex  hover:bg-yellow-600"></i></a>
+    <a href="http://www.linkedin.com/in/deborah-amuzu-88541122a" class=" text-[25px]"><i class="fa fa-linkedin text-white rounded-full p-1 bg-[#2C4659] w-10 h-10 items-center justify-center flex hover:bg-yellow-600"></i></a>
+  </div>
+  <h4 class="flex gap-4 justify-center mt-4 text-lg">
+      <a class="hover:bg-[rgb(192,153,27)] px-2 py-1 rounded" href="#Home">Home</a>
+      <a class="hover:bg-[rgb(192,153,27)] px-2 py-1 rounded" href="#About">About</a>
+      <a class="hover:bg-[rgb(192,153,27)] px-2 py-1 rounded" href="#Port">Portfolio</a>
+      <a class="hover:bg-[rgb(192,153,27)] px-2 py-1 rounded" href="#Contact">Contact Me</a>
+  </h4>
+  <h4 class="text-sm text-black italic mb-2 text-center">
+      Copyright © 2024 All rights reserved
+  </h4>
+</footer>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'translator');
+  }
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+  function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+  }
+</script>
 </body>
 
 </html>
