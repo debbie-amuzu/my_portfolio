@@ -15,7 +15,7 @@
   <nav class="fixed w-full  bg-[#2C4659] flex flex-col md:flex-row justify-between items-center p-4">
     <div class="flex font-bold text-[#daa520] text-[32px] md:text-[40px] tracking-[3px]"
       style="font-family: 'Brush Script MT', cursive;">D.Amuzu</div>
-
+      <div id="translator"></div>
     <div class="md:hidden flex flex-col cursor-pointer" onclick="toggleMenu()">
       <div class="h-1 w-6 bg-[#F2EDE6] mb-1"></div>
       <div class="h-1 w-6 bg-[#F2EDE6] mb-1"></div>
@@ -23,7 +23,7 @@
     </div>
 
     <div id="menu" class="menu hidden md:flex flex-col md:flex-row justify-center items-center gap-4 mt-2 md:mt-0">
-
+     
       <a class="font-sans italic text-[14px] md:text-[16px] font-bold transition-colors duration-500 text-[#F2EDE6] hover:text-[#daa520]"
         href="#">Home</a>
       <a class="font-sans italic text-[14px] md:text-[16px] font-bold transition-colors duration-500 text-[#F2EDE6] hover:text-[#daa520]"
@@ -32,7 +32,7 @@
         href="#Port">Portfolio</a>
       <a class="font-sans italic text-[14px] md:text-[16px] font-bold transition-colors duration-500 text-[#F2EDE6] hover:text-[#daa520]"
         href="#Contact">Contact</a>
-
+       
         <a href="https://www.facebook.com/deborahh.amuzu?mibextid=ZbWKwL" class="text-white text-[18px]"><i class="fa fa-facebook text-white rounded-full p-1 bg-yellow-500 w-7 h-7 justify-center items-center flex hover:bg-yellow-600"></i></a>
         <a href="https://www.instagram.com/deborah_amuzu/profilecard/?igsh=MTRrcnI4dmM1NzI5" class="text-white text-[18px]"><i class="fa fa-instagram text-white rounded-full p-1 bg-yellow-500 w-7 h-7 justify-center items-center flex  hover:bg-yellow-600"></i></a>
         <a href="http://www.linkedin.com/in/deborah-amuzu-88541122a" class=" text-[18px]"><i class="fa fa-linkedin text-white rounded-full p-1 bg-yellow-500 w-7 h-7 justify-center items-center flex hover:bg-yellow-600"></i></a>
@@ -82,10 +82,10 @@
           <li><a href="#">Contact</a></li>
       </ul>
   </div> -->
-    <div class="about bg-[#daa520]text-white">
-      <h5>ABOUT ME</h5>
-      <h1>WHO AM I</h1>
-      <p class="pb-10">
+    <div class=" bg-[#daa520]text-white space-y-3 w-[90%] md-w-[90%] mt-20 pr-10 h-full">
+      <h5 class="text-2xl ">ABOUT ME</h5>
+      <h1 class="text-xl">WHO AM I</h1>
+      <p class="pb-10 text-lg">
         Hello! I'm Deborah Amuzu, a passionate Junior front-end web developer with a love for building a dynamic
         and
         user-friendly web applications.
@@ -334,6 +334,14 @@
 </script>
 
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 
 <script>
   function toggleMenu() {
